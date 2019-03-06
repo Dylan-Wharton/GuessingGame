@@ -1,14 +1,13 @@
 import java.util.Random;
 
 public class Game {
-        int guessNum;
-        boolean guessedCorrect;
+        int correctNum, guessedNum;
 
         public Game() {
             Random random = new Random();
-            this.guessNum = random.nextInt(10);
+            this.correctNum = random.nextInt(10);
         }
         public boolean check(int correctNum){
-            return i==this.guessNum;
+            return guessedNum==this.correctNum;
         }
 }
